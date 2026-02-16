@@ -1,6 +1,4 @@
-plugins {
-    id 'com.android.application'
-}
+apply plugin: 'com.android.application'
 
 android {
     namespace 'com.surviveonstrange.core'
@@ -24,7 +22,6 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
-    // путь к манифесту указан по умолчанию
     sourceSets {
         main {
             manifest.srcFile 'src/main/AndroidManifest.xml'
