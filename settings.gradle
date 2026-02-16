@@ -1,2 +1,2 @@
 rootProject.name = "SurviveOnStrange"
-include ':app'
+include ':core'   // <- вместо ':app'
