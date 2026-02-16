@@ -1,5 +1,3 @@
-apply plugin: 'com.android.application'
-
 android {
     namespace 'com.surviveonstrange.core'
     compileSdk 34
