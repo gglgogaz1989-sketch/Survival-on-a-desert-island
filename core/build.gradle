@@ -1,6 +1,4 @@
-plugins {
-    id 'com.android.application'
-}
+apply plugin: 'com.android.application'
 
 android {
     namespace 'com.surviveonstrange.core'
@@ -17,9 +15,6 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-        }
-        debug {
-            debuggable true
         }
     }
 }
