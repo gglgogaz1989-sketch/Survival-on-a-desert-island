@@ -1,15 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.surviveonstrange">
+    package="com.surviveonstrange.core">
 
     <application
-    android:icon="@mipmap/icon"
-    android:label="Survive On Strange"
-    android:theme="@style/Theme.AppCompat.Light.NoActionBar">.NoActionBar">
-        
-        <activity android:name=".screen.LoadingActivity">
+        android:allowBackup="true"
+        android:label="SurviveOnStrange"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+        <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>
