@@ -2,9 +2,9 @@
     package="com.surviveonstrange">
 
     <application
-        android:allowBackup="true"
-        android:label="Survive On Strange"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+    android:icon="@mipmap/icon"
+    android:label="Survive On Strange"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">.NoActionBar">
         
         <activity android:name=".screen.LoadingActivity">
             <intent-filter>
