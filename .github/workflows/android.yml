@@ -27,10 +27,11 @@ jobs:
         echo "$PWD/gradle-8.2.1/bin" >> $GITHUB_PATH
 
     - name: Build APK
-      run: gradle -p app clean assembleDebug --no-daemon
+      run: gradle clean assembleDebug --no-daemon
+      working-directory: ./core   # <- путь к модулю
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: app-debug-apk
-        path: app/build/outputs/apk/debug/app-debug.apk
+        path: ./core/build/outputs/apk/debug/app-debug.apk
